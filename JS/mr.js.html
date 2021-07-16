@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mr.Javascript!</title>
+</head>
+<body>
+	<h1>I'm Mr.JavaScript</h1>
+	<a href="#" id="Reset">Reset</a>
+	<a href="#" class="how">Hey JavaScript, how ur feeling?</a>
+	<script type="text/javascript">
+		
+
+		var c = document.getElementsByClassName("how");
+		console.log(c);
+		c[0].addEventListener('click',function() {
+			var h1 = document.querySelector("h1");
+			h1.innerHTML = "I'm alive";
+		});
+
+		var R = document.getElementById("Reset");
+		R.addEventListener('click',function() {
+			var h1 = document.querySelector("h1");
+			h1.innerHTML = "Hey JavaScript, how ur feeling?"
+		});
+
+		sum(2,3);
+
+		function sum(a,b) {
+			c = a + b;
+			//document.body.innerHTML = c;
+		}
+
+
+	</script>
+</body>
+</html>
